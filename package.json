@@ -1,21 +1,9 @@
 {
   "name": "power-english-ai-platform",
   "version": "1.0.0",
-  "description": "AI-powered process-oriented English writing, speaking & School Life Record platform for Korean secondary education",
-  "main": "server.js",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
-  },
-  "keywords": [
-    "education",
-    "english-learning",
-    "gemini-ai",
-    "writing",
-    "speaking",
-    "school-life-record",
-    "google-sheets"
-  ],
-  "author": "",
-  "license": "MIT"
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
 }
