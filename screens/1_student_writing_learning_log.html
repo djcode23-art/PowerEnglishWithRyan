@@ -1,0 +1,827 @@
+<!DOCTYPE html><html lang="ko" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-surface-variant":"#434655","surface-bright":"#faf8ff","primary":"#004ac6","surface-tint":"#0053db","on-primary-fixed":"#00174b","on-secondary-fixed":"#002113","on-secondary-fixed-variant":"#005236","secondary-container":"#6cf8bb","outline":"#737686","on-surface":"#131b2e","on-tertiary-fixed-variant":"#653e00","on-tertiary":"#ffffff","background":"#faf8ff","on-error":"#ffffff","error":"#ba1a1a","tertiary-fixed":"#ffddb8","tertiary-fixed-dim":"#ffb95f","on-background":"#131b2e","on-secondary":"#ffffff","inverse-primary":"#b4c5ff","surface-container-low":"#f2f3ff","error-container":"#ffdad6","primary-fixed":"#dbe1ff","surface-container-lowest":"#ffffff","primary-container":"#2563eb","on-primary-fixed-variant":"#003ea8","surface-container-highest":"#dae2fd","inverse-surface":"#283044","tertiary":"#784b00","surface-variant":"#dae2fd","surface-container-high":"#e2e7ff","surface-dim":"#d2d9f4","tertiary-container":"#996100","inverse-on-surface":"#eef0ff","on-primary-container":"#eeefff","surface-container":"#eaedff","on-secondary-container":"#00714d","secondary-fixed":"#6ffbbe","on-tertiary-container":"#ffeedd","outline-variant":"#c3c6d7","primary-fixed-dim":"#b4c5ff","on-tertiary-fixed":"#2a1700","on-error-container":"#93000a","surface":"#faf8ff","secondary-fixed-dim":"#4edea3","secondary":"#006c49"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"2.5rem","space-md":"1rem","margin-desktop":"2.5rem",margin:"1rem","gutter-desktop":"2rem",gutter:"1rem","space-sm":"0.5rem","gutter-tablet":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin-tablet":"1.5rem"},fontFamily:{"headline-sm":["Inter"],"label-md":["Inter"],"display-lg":["Inter"],"headline-md":["Inter"],"label-lg":["Inter"],"display-lg-mobile":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"body-md":["Inter"],"headline-lg":["Inter"]},fontSize:{"headline-sm":["1.125rem",{lineHeight:"1.625rem",fontWeight:"600"}],"label-md":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.02em",fontWeight:"600"}],"display-lg":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-md":["1.375rem",{lineHeight:"1.875rem",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.01em",fontWeight:"600"}],"display-lg-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.015em",fontWeight:"700"}],"body-sm":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}],"body-lg":["1.125rem",{lineHeight:"1.875rem",fontWeight:"400"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.025em",fontWeight:"500"}],"body-md":["1rem",{lineHeight:"1.625rem",fontWeight:"400"}],"headline-lg":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.015em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-sm whitespace-nowrap overflow-x-auto"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-2"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm shrink-0"><span class="material-symbols-outlined text-[20px]">menu_book</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">Power English</span><span class="font-label-sm text-[10px] text-on-surface-variant leading-none">Studio &amp; Learning Log</span></div></div></div><nav class="hidden xl:flex items-center p-space-xs bg-surface-container-low rounded-full shrink-0 whitespace-nowrap" data-active-classes="bg-primary-container text-on-primary-container font-label-lg"><a aria-current="page" class="px-3 py-1.5 rounded-full transition-all bg-primary-container text-on-primary-container font-label-lg inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap leading-tight" data-path="writing-learning-log" href="#"><span class="material-symbols-outlined text-[16px] shrink-0">edit_note</span><span class="whitespace-nowrap">1. 글쓰기 &amp; 러닝로그</span></a><a class="px-3 py-1.5 rounded-full text-on-surface-variant font-label-lg text-label-lg transition-all hover:text-on-surface shrink-0 whitespace-nowrap leading-tight inline-flex items-center gap-1" data-path="grammar-mini-lab" href="#" onclick="document.getElementById('modal-grammar-minilab').classList.remove('hidden')"><span class="material-symbols-outlined text-[16px] shrink-0">science</span><span class="whitespace-nowrap">2. 문법 미니랩</span><span class="ml-1 px-1.5 py-0.2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold inline-flex items-center gap-0.5 whitespace-nowrap"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse shrink-0"></span>1개 추천</span></a><a class="px-3 py-1.5 rounded-full text-on-surface-variant font-label-lg text-label-lg transition-all hover:text-on-surface shrink-0 whitespace-nowrap leading-tight inline-flex items-center gap-1" data-path="language-competency-report" href="#"><span class="material-symbols-outlined text-[16px] shrink-0">analytics</span><span class="whitespace-nowrap">3. 언어역량 리포트</span></a><a class="px-3 py-1.5 rounded-full text-on-surface-variant font-label-lg text-label-lg transition-all hover:text-on-surface shrink-0 whitespace-nowrap leading-tight inline-flex items-center gap-1" data-path="teacher-management-console" href="#" onclick="document.getElementById('modal-teacher-portfolio-archive').classList.remove('hidden')"><span class="material-symbols-outlined text-[16px] shrink-0">admin_panel_settings</span><span class="whitespace-nowrap">4. 교사 관리 콘솔</span></a></nav><div class="flex items-center gap-space-sm shrink-0 whitespace-nowrap"><div class="hidden sm:flex flex-col text-right shrink-0"><div class="flex items-center justify-end gap-1.5"><span class="font-label-lg text-label-lg text-on-surface font-bold whitespace-nowrap">30215 이민서 학생</span><span class="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded-full bg-surface-container-high text-primary font-label-sm text-[10px] font-semibold border border-primary/20 shrink-0"><span class="material-symbols-outlined text-[12px] text-primary">verified_user</span>Google Edu</span></div><div class="flex items-center justify-end gap-1"><span class="font-label-sm text-[11px] text-on-surface-variant font-mono truncate max-w-[170px]">minseo.lee@seoul-hb.ms.kr</span><span class="text-outline-variant font-label-sm text-[10px]">•</span><span class="font-label-sm text-[11px] text-secondary font-semibold whitespace-nowrap">CEFR B2</span></div></div><div class="relative shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm shrink-0 text-on-primary font-bold text-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-surface-container-lowest flex items-center justify-center border border-outline-variant/40 shadow-xs" title="Google Workspace for Education 연동"><svg class="w-2.5 h-2.5" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"></path><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"></path></svg></span></div></div></div><div class="xl:hidden flex items-center overflow-x-auto px-margin md:px-margin-tablet py-space-xs bg-surface-container-low whitespace-nowrap"><nav class="flex items-center gap-space-xs min-w-max shrink-0 whitespace-nowrap" data-active-classes="bg-primary-container text-on-primary-container font-label-md"><a aria-current="page" class="px-3 py-1 rounded-full transition-all bg-primary-container text-on-primary-container font-label-md text-label-md inline-flex items-center gap-1 shrink-0 whitespace-nowrap leading-tight" data-path="writing-learning-log" href="#"><span class="material-symbols-outlined text-[14px] shrink-0">edit_note</span><span class="whitespace-nowrap">1. 글쓰기 &amp; 러닝로그</span></a><a class="px-3 py-1 rounded-full text-on-surface-variant font-label-md text-label-md transition-all hover:text-on-surface shrink-0 whitespace-nowrap leading-tight inline-flex items-center gap-1" data-path="grammar-mini-lab" href="#" onclick="document.getElementById('modal-grammar-minilab').classList.remove('hidden')"><span class="whitespace-nowrap">2. 문법 미니랩</span><span class="ml-1 px-1 py-0.2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[9px] font-bold shrink-0 whitespace-nowrap">1</span></a><a class="px-3 py-1 rounded-full text-on-surface-variant font-label-md text-label-md transition-all hover:text-on-surface shrink-0 whitespace-nowrap leading-tight inline-flex items-center" data-path="language-competency-report" href="#"><span class="whitespace-nowrap">3. 언어역량 리포트</span></a><a class="px-3 py-1 rounded-full text-on-surface-variant font-label-md text-label-md transition-all hover:text-on-surface shrink-0 whitespace-nowrap leading-tight inline-flex items-center" data-path="teacher-management-console" href="#" onclick="document.getElementById('modal-teacher-portfolio-archive').classList.remove('hidden')"><span class="whitespace-nowrap">4. 교사 관리 콘솔</span></a></nav></div></header><main class="w-full bg-surface pt-20"><div class="flex flex-col w-full">
+<!-- Top Learning Log Bar & Task Management Zone -->
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-md">
+<!-- Breadcrumb & Session Meta Strip -->
+<div class="flex items-center justify-between gap-space-sm pb-space-sm overflow-x-auto whitespace-nowrap"><div class="flex items-center gap-space-xs shrink-0 whitespace-nowrap"><span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold shrink-0 whitespace-nowrap"><span class="material-symbols-outlined text-[14px] shrink-0">auto_stories</span>Learning Log #04</span><span class="text-on-surface-variant font-label-sm text-label-sm shrink-0 whitespace-nowrap">2025.02.26 (수) 5교시 영어집중반</span><span class="text-outline-variant font-label-sm text-label-sm shrink-0">•</span><span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-medium shrink-0 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse shrink-0"></span>실시간 클라우드 자동 저장됨</span></div><div class="flex items-center gap-space-xs shrink-0 whitespace-nowrap"><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary hover:bg-primary-container transition-all font-label-md text-label-md shadow-md shrink-0 whitespace-nowrap cursor-pointer border border-primary/20 leading-tight" id="btn-send-email-pdf" type="button" title="작성 이력, AI 코칭, 성찰 및 최종본이 포함된 종합 포트폴리오 PDF를 학교 구글 계정으로 발송"><span class="material-symbols-outlined text-[16px] shrink-0">mark_email_read</span><span class="font-bold whitespace-nowrap">활동자료 PDF 구글메일 발송</span><span class="px-1.5 py-0.2 rounded-full bg-surface-container-lowest text-primary text-[10px] font-bold shrink-0 whitespace-nowrap">PDF</span></button><div class="w-px h-5 bg-outline-variant/60 mx-0.5 shrink-0"></div><button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-highest text-on-surface hover:bg-surface-container transition-all font-label-md text-label-md shadow-sm shrink-0 whitespace-nowrap cursor-pointer leading-tight" id="btn-open-teacher-archive" type="button" title="교사용 포트폴리오 아카이브 및 일괄 다운로드 콘솔"><span class="material-symbols-outlined text-[16px] text-tertiary shrink-0">inventory_2</span><span class="font-medium whitespace-nowrap">포트폴리오 아카이브</span><span class="px-1 rounded-full bg-tertiary text-on-tertiary text-[10px] font-semibold leading-tight shrink-0 whitespace-nowrap">보관함</span></button><button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all font-label-md text-label-md shadow-xs shrink-0 whitespace-nowrap cursor-pointer leading-tight" id="btn-open-student-modal" type="button" title="나만의 자율 연습 과업 추가"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0">edit_calendar</span><span class="font-medium whitespace-nowrap">자율 연습 추가</span><span class="px-1 rounded-full bg-secondary text-on-secondary text-[10px] font-semibold leading-tight shrink-0 whitespace-nowrap">자율</span></button></div></div>
+<!-- Banner & Log Selector Bento Block -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm">
+
+<!-- Quick Status Badges -->
+<div class="flex items-center gap-space-md bg-surface-container-low/60 -mx-space-lg -mb-space-lg px-space-lg py-space-sm overflow-x-auto whitespace-nowrap"><div class="flex items-center gap-space-xs shrink-0 whitespace-nowrap"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">target</span><span class="font-label-sm text-label-sm text-on-surface-variant">목표 분량:</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">200단어 에세이</span></div><div class="flex items-center gap-space-xs shrink-0 whitespace-nowrap"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">stylus</span><span class="font-label-sm text-label-sm text-on-surface-variant">입력 모드:</span><span class="font-label-sm text-label-sm text-secondary font-medium">S-Pen 태블릿 / 키보드 OCR 지원</span></div><div class="flex items-center gap-space-xs shrink-0 whitespace-nowrap"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">psychology</span><span class="font-label-sm text-label-sm text-on-surface-variant">성찰 단계:</span><span class="font-label-sm text-label-sm text-tertiary font-bold">2/3 문항 확인됨</span></div></div>
+</div>
+</div>
+<!-- Main Content Grid: Workspace + Live AI Reflection Validation Pane -->
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- LEFT/CENTER CANVAS: Google Docs Style Editor & Pre-submission Reflection -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- Editor Container Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Google Docs Style Sticky Toolbar -->
+<div class="px-space-md py-space-xs bg-surface-container-low flex items-center justify-between gap-space-xs overflow-x-auto whitespace-nowrap"><div class="flex items-center gap-1 shrink-0 whitespace-nowrap"><button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors shrink-0" title="되돌리기" type="button"><span class="material-symbols-outlined text-[18px]">undo</span></button><button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors shrink-0" title="다시실행" type="button"><span class="material-symbols-outlined text-[18px]">redo</span></button><div class="w-px h-4 bg-outline-variant mx-1 shrink-0"></div><button class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-highest text-primary font-bold shadow-xs shrink-0" title="굵게" type="button"><span class="material-symbols-outlined text-[18px]">format_bold</span></button><button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors shrink-0" title="기울임" type="button"><span class="material-symbols-outlined text-[18px]">format_italic</span></button><button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors shrink-0" title="형광펜 강조" type="button"><span class="material-symbols-outlined text-[18px]">format_ink_highlighter</span></button><div class="w-px h-4 bg-outline-variant mx-1 shrink-0"></div><button class="px-space-xs py-1 rounded-lg text-primary hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-1 shrink-0 whitespace-nowrap" type="button"><span class="material-symbols-outlined text-[16px] shrink-0">spellcheck</span><span class="">스펠체크</span></button><div class="w-px h-4 bg-outline-variant mx-1 shrink-0"></div><button class="px-space-xs py-1 rounded-lg text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-1 border border-outline-variant/40 bg-surface-container-lowest transition-colors shadow-xs shrink-0 whitespace-nowrap" title="댓글 추가 (Ctrl+Alt+M)" type="button" id="btn-add-inline-comment"><span class="material-symbols-outlined text-[16px] text-primary shrink-0">add_comment</span><span class="font-medium">댓글</span><span class="hidden sm:inline text-[10px] px-1 py-0.2 rounded bg-surface-container text-on-surface-variant font-mono">Ctrl+Alt+M</span></button></div><div class="flex items-center gap-space-sm shrink-0 whitespace-nowrap"><div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm shrink-0 whitespace-nowrap"><span class="font-bold text-primary">184</span><span class="text-on-surface-variant">/ 200 Words</span></div><span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold shrink-0 whitespace-nowrap"><span class="material-symbols-outlined text-[14px] shrink-0">school</span>CEFR B2</span></div></div>
+<!-- Document Sheet Area -->
+<div class="bg-surface-container-lowest space-y-space-md font-body-lg text-body-lg text-on-surface leading-relaxed focus:outline-none p-space-md min-h-[520px]"><div class="relative flex flex-col xl:flex-row gap-space-lg items-start"><div class="flex-1 w-[80%] pr-space-md space-y-space-md min-w-0 min-h-[480px]"><p class="text-on-surface leading-relaxed">Artificial intelligence has rapidly entered our classrooms, fundamentally transforming the traditional educational landscape. Supporters highlight that AI tutors can provide personalized, on-demand explanations tailored to each learner’s specific pace. For example, language learners can immediately receive grammar feedback without feeling intimidated or judged by peers.</p><div class="relative group/para"><p class="text-on-surface leading-relaxed">However, this transformative technology must be recognized as a double-edged sword. When students excessively depend on automated generators to formulate critical essays, they risk diminishing their own original cognitive reasoning and analytical faculties. Furthermore, algorithmic feedback, no matter how sophisticated, <mark class="bg-tertiary-fixed text-on-surface px-1 py-0.5 rounded cursor-pointer transition-all border-b-2 border-tertiary hover:bg-tertiary-fixed-dim" id="comment-highlight-1" title="Mr. Ryan의 교사 코멘트 연결됨">cannot replicate the genuine emotional empathy and moral mentorship provided by human educators<span class="inline-flex items-center justify-center align-middle ml-1 w-4 h-4 rounded-full bg-tertiary text-on-tertiary text-[10px] font-bold">1</span></mark>.</p><div class="absolute -right-3 top-1/2 -translate-y-1/2 hidden md:flex items-center"><button class="w-6 h-6 rounded-full bg-surface-container-lowest border border-primary text-primary shadow-md flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-all group-hover/para:opacity-100" title="이 문단에 새 댓글 추가 (Add comment)" type="button"><span class="material-symbols-outlined text-[14px]">add_comment</span></button></div></div><p class="bg-primary-fixed/30 p-space-xs rounded text-on-surface leading-relaxed">Therefore, we should not blindly reject AI nor unconditionally succumb to it. Instead, learners must approach it as an analytical thought companion while maintaining active ownership over their ethical judgment and expressive voice.</p></div><div class="w-full xl:w-[20%] xl:max-w-[230px] flex flex-col gap-space-xs shrink-0 mt-2 xl:mt-0"><div class="bg-surface-container-lowest rounded-lg border-2 border-primary/60 shadow-md p-space-xs space-y-space-xs relative text-xs"><div class="flex items-center justify-between gap-1"><div class="flex items-center gap-1 min-w-0"><div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-[11px] shrink-0">R</div><div class="flex flex-col min-w-0"><span class="text-[11px] text-on-surface font-bold truncate leading-tight">Mr. Ryan</span><span class="text-[10px] text-on-surface-variant leading-none">방금 전</span></div></div><div class="flex items-center gap-0.5 shrink-0"><button class="w-5 h-5 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container" title="해결됨 처리" type="button"><span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span></button><button class="w-5 h-5 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container" title="추가 옵션" type="button"><span class="material-symbols-outlined text-[15px]">more_vert</span></button></div></div><div class="pl-1.5 border-l-2 border-tertiary text-on-surface-variant text-[10px] italic truncate">“cannot replicate...”</div><p class="text-[11px] text-on-surface leading-snug pt-0.5">민서 학생, <span class="font-semibold text-primary">'emotional empathy'</span> 표현 선정이 아주 좋습니다! 1문장 더 뒷받침해볼 수 있을까요?</p><div class="pt-1 space-y-1 border-t border-outline-variant/40"><div class="relative"><input class="w-full px-1.5 py-1 text-[11px] rounded bg-surface-container-low text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest border border-outline-variant/60 focus:border-primary" placeholder="답글 작성..." type="text"><button class="absolute right-1 top-1 px-1.5 py-0.2 rounded bg-primary text-on-primary text-[10px] font-semibold hover:bg-primary-container" type="button">답글</button></div></div></div><div class="bg-surface-container-low rounded-lg border border-secondary/40 shadow-xs p-space-xs space-y-1 opacity-90 hover:opacity-100 transition-opacity text-xs"><div class="flex items-center justify-between gap-1"><div class="flex items-center gap-1 min-w-0"><span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center text-[10px] shrink-0 font-bold"><span class="material-symbols-outlined text-[12px]">smart_toy</span></span><span class="text-[11px] text-on-surface font-bold truncate">Lingua AI</span></div><span class="px-1 py-0.2 rounded bg-secondary-fixed/40 text-on-secondary-fixed text-[9px] font-medium shrink-0">자동</span></div><p class="text-[10px] text-on-surface-variant leading-tight"><strong class="text-secondary font-semibold">💡 제안:</strong> 결론부 도입 시 <span class="underline font-medium text-on-surface">'On the other hand'</span> 또는 <span class="underline font-medium text-on-surface">'Conversely'</span> 배치 권장</p></div></div></div></div>
+<!-- Bottom Sheet Vocabulary & OCR Assist Bar -->
+<div class="px-space-lg py-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm text-on-surface-variant">활용된 B2 고급 어휘:</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-medium">transformative</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-medium">double-edged</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-medium">analytical faculties</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-medium">succumb to</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">stylus_note</span>
+<span class="">디지털 필기 보정 ON</span>
+</div>
+</div>
+</div>
+<!-- MANDATORY PRE-SUBMISSION REFLECTION WORKSPACE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md relative overflow-y-auto max-h-[240px] space-y-space-sm pr-space-sm focus:outline-none" id="reflection-workspace">
+<!-- Header & Lock Alert Indicator -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between gap-space-sm whitespace-nowrap overflow-x-auto"><div class="flex items-center gap-space-xs shrink-0 whitespace-nowrap"><span class="material-symbols-outlined text-primary text-[24px] shrink-0">psychology_alt</span><h2 class="font-headline-md text-headline-md text-on-surface font-bold whitespace-nowrap leading-tight">제출 전 필수 자가 성찰 (Metacognition Log)</h2></div><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-semibold shrink-0 whitespace-nowrap leading-tight" id="reflection-badge"><span class="material-symbols-outlined text-[16px] shrink-0">lock</span>제출 잠김 (성찰 66% 완료)</span></div>
+<!-- Notice Banner -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-error">🔒 과제 제출 잠김:</strong> Ryan 선생님의 수업 방침에 따라, 체크리스트 3개 항목과 심층 비교 성찰을 모두 충실히 작성해야 <span class="font-semibold text-primary">[선생님께 최종 제출]</span> 버튼이 활성화됩니다.
+            </p>
+</div>
+</div>
+<!-- SECTION A: Metacognition Checklist -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">
+              SECTION A. 구조 및 어휘 점검 체크리스트
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 / 3 문항 체크 완료</span>
+</div>
+<div class="space-y-space-xs">
+<!-- Item 1 (Checked) -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium line-through opacity-75">
+                  1. 주제문(Topic Sentence)과 뒷받침 근거가 명확히 연결되었는가?
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">
+                  ✓ 문단 1의 AI 튜터 사례와 문단 2의 비판적 사고 저하 논거가 대조적으로 서술됨
+                </span>
+</div>
+</label>
+<!-- Item 2 (Checked) -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium line-through opacity-75">
+                  2. 구어체 단어(totally, kids, a lot of 등)를 학술 어휘로 적절히 대체하였는가?
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">
+                  ✓ 'diminishing cognitive reasoning', 'succumb to' 등 공식 학술 표현으로 치환 완료
+                </span>
+</div>
+</label>
+<!-- Item 3 (Unchecked - Requiring action) -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-highest/80 hover:bg-surface-container-high transition-colors cursor-pointer shadow-xs" id="checklist-item-3">
+<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary" id="chk-counter-arg" type="checkbox">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-body-md text-on-surface font-semibold">
+                    3. 반론(Counter-argument)에 대한 나의 논박이 논리적인가?
+                  </span>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">확인 필요</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+                  상대방(AI 찬성론자)의 효율성 주장을 먼저 인정한 뒤, '인간 교사의 정서적 유대(Human Empathy)'로 반박했는지 스스로 확인하고 체크하세요.
+                </span>
+</div>
+</label>
+</div>
+</div>
+<!-- SECTION B: Before & After Thinking Reflection -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">
+              SECTION B. 이전 생각 vs 이후 생각 비교 성찰 (Before &amp; After Thinking)
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">사고의 심화 기록됨</span>
+</div>
+<!-- Dual Split Box -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Initial Thought -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-space-xs">
+<div>
+<div class="flex items-center gap-space-xs pb-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px]">history</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-bold uppercase">작성 전 나의 생각 (Initial Thought)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                  "AI는 선생님의 수업 준비나 번역만 도와주는 단순한 검색 도구일 것이라 생각했다. 그냥 숙제할 때 답을 빨리 찾는 기계 정도로만 여겼다."
+                </p>
+</div>
+<span class="font-label-sm text-label-sm text-outline-variant pt-space-xs">초기 진술 기록됨 (오전 10:15)</span>
+</div>
+<!-- Evolved Thought -->
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between space-y-space-xs shadow-xs">
+<div>
+<div class="flex items-center gap-space-xs pb-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">trending_up</span>
+<span class="font-label-md text-label-md text-primary font-bold uppercase">작성 및 피드백 후 나의 생각 (Evolved Thinking)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+                  "단순 도구를 넘어 개별화된 피드백을 제공할 수 있지만, 교사와 학생 간의 정서적 교감(Human Empathy)은 결코 대체할 수 없다는 양면성을 깨달았다."
+                </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold pt-space-xs">✓ 고차원적 인식 확장 감지됨</span>
+</div>
+</div>
+<!-- Key Learning Takeaway (Input Box with Live Validation Sample) -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-bold" for="takeaway-input">
+                배운 점 / 다음 글쓰기 적용점 (Key Learning Takeaway)
+              </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="char-counter">64 / 150자</span>
+</div>
+<textarea class="w-full p-space-md rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors shadow-sm" id="takeaway-input" placeholder="단순히 '재미있었다'가 아닌, 글을 전개하며 배운 구체적 표현이나 논리적 구조 전략을 적어보세요." rows="3">논증 에세이에서 반론을 먼저 인정하고 재반박할 때 설득력이 훨씬 높아짐을 배웠다.</textarea>
+<!-- Quick Suggestion Pill Chips -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">추천 가이드 클릭:</span>
+<button class="guide-chip px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">
+                #구체적 어휘 개선 사례 적기
+              </button>
+<button class="guide-chip px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">
+                #반론 극복 경험 추가
+              </button>
+<button class="guide-chip px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">
+                #자동 문맥 가이드 받기
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT/SIDEBAR: AI Reflection Quality Validator & Teacher Rubric -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg min-w-0">
+<!-- AI REFLECTION QUALITY VALIDATOR CARD -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col gap-space-sm sticky top-24" id="ai-coach-panel">
+<!-- Header with Generative AI Active Indicator -->
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30 flex-wrap gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-xs shrink-0">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</span>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">AI 성찰 코치 실시간 분석</h3>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed font-label-sm text-[10px] font-bold shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>GPT-4o 활성</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Interactive Reflection &amp; Writing Coach</span>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shrink-0" id="ai-status-pill">유의미한 성찰 달성</span>
+</div>
+
+<!-- Compact Accordion / Metacognition Summary & Rubric -->
+<details class="bg-surface-container-low rounded-xl p-space-xs space-y-space-xs cursor-pointer group" open="">
+<summary class="flex items-center justify-between px-space-xs py-1 text-on-surface select-none list-none">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">insights</span>
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">성찰 품질 &amp; 채점 루브릭 현황</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-fixed/30 text-secondary text-[10px] font-semibold">92점 수준</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-space-xs pt-1 pb-space-xs space-y-space-xs">
+<div class="p-space-xs rounded-lg bg-secondary-fixed/30 space-y-0.5" id="ai-alert-box">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]" id="ai-alert-icon">verified</span>
+<h4 class="font-label-md text-label-md text-on-secondary-fixed font-bold" id="ai-alert-title">깊이 있는 메타인지 성찰 감지됨!</h4>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface leading-tight" id="ai-alert-desc">'반론 인정 후 재반박' 담화 전략(Discourse Strategy)이 우수하게 명시되었습니다.</p>
+</div>
+<div class="space-y-1 font-label-sm text-[11px]">
+<div>
+<div class="flex justify-between text-on-surface-variant mb-0.5">
+<span class="">사고의 변화 (Initial vs Evolved)</span>
+<span class="font-semibold text-secondary">100% (탁월)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container"><div class="h-1.5 rounded-full bg-secondary w-full"></div></div>
+</div>
+<div>
+<div class="flex justify-between text-on-surface-variant mb-0.5">
+<span class="">언어적 개선 구체성 (Vocabulary)</span>
+<span class="font-semibold text-primary">85% (우수)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container"><div class="h-1.5 rounded-full bg-primary w-[85%]"></div></div>
+</div>
+<div>
+<div class="flex justify-between text-on-surface-variant mb-0.5">
+<span class="">논리적 반론 점검 (Counter-arg)</span>
+<span class="font-semibold text-tertiary" id="rubric-counter-score">확인 대기 중 (30%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container"><div class="h-1.5 rounded-full bg-tertiary w-[30%] transition-all" id="rubric-counter-bar"></div></div>
+</div>
+</div>
+<div class="p-1.5 rounded-lg bg-surface-container-highest flex items-start gap-1 text-[11px]">
+<span class="material-symbols-outlined text-primary text-[15px] shrink-0 mt-0.5">rate_review</span>
+<div class="text-on-surface leading-tight">
+<span class="font-bold text-primary">Mr. Ryan 코칭:</span> 결론에서 'Human Empathy' 핵심 어휘를 활용한 점이 매우 인상적입니다!
+</div>
+</div>
+</div>
+</details>
+
+<!-- Interactive Chat Stream Area -->
+<div class="flex flex-col flex-1 border border-outline-variant/40 rounded-xl bg-surface-container-lowest overflow-hidden shadow-xs">
+<div class="px-space-sm py-1.5 bg-surface-container-low border-b border-outline-variant/30 flex items-center justify-between text-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[15px] text-primary">forum</span>
+<span class="">실시간 인터랙티브 코칭 대화</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="text-[11px] text-tertiary underline hover:text-on-surface transition-colors" id="btn-simulate-trivial" type="button">'단순작성' 시뮬레이션</button>
+</div>
+</div>
+<div class="p-space-sm space-y-space-sm overflow-y-auto max-h-[260px] text-xs leading-relaxed" id="chat-message-list">
+<!-- AI Coach Message 1 -->
+<div class="flex items-start gap-1.5">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-[10px] shrink-0">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span>
+</div>
+<div class="flex flex-col gap-0.5 max-w-[85%]">
+<span class="font-label-sm text-[10px] text-on-surface-variant font-semibold">AI 성찰 코치 • 방금 전</span>
+<div class="p-space-xs rounded-xl rounded-tl-none bg-surface-container-low text-on-surface border border-outline-variant/30 shadow-xs">
+민서 학생, 2문단의 <span class="font-semibold text-primary">'cannot replicate genuine emotional empathy'</span> 표현이 아주 설득력 있어요! 이 문장을 뒷받침할 실제 학교 현장의 구체적 사례를 1문장 더 보강해볼까요? 어떤 경험이 떠오르나요?
+</div>
+</div>
+</div>
+<!-- Student Message 1 -->
+<div class="flex items-start gap-1.5 justify-end">
+<div class="flex flex-col gap-0.5 max-w-[85%] items-end">
+<span class="font-label-sm text-[10px] text-on-surface-variant font-semibold">30215 이민서 • 방금 전</span>
+<div class="p-space-xs rounded-xl rounded-tr-none bg-primary text-on-primary shadow-xs">
+교사와 학생 사이의 정서적 교감이나 맞춤형 진로 상담 경험을 예시로 들면 좋을 것 같아요.
+</div>
+</div>
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-[10px] shrink-0">
+민
+</div>
+</div>
+<!-- AI Coach Message 2 -->
+<div class="flex items-start gap-1.5">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-[10px] shrink-0">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span>
+</div>
+<div class="flex flex-col gap-0.5 max-w-[88%]">
+<span class="font-label-sm text-[10px] text-on-surface-variant font-semibold">AI 성찰 코치 • 지금</span>
+<div class="p-space-xs rounded-xl rounded-tl-none bg-surface-container-low text-on-surface border border-outline-variant/30 shadow-xs space-y-1">
+<p class="">아주 훌륭한 접근이에요! 그렇다면 다음과 같이 연결해보면 설득력이 배가됩니다:</p>
+<div class="p-1 rounded bg-surface-container-lowest border-l-2 border-primary text-[11px] text-on-surface font-medium">
+"For instance, personalized mentorship during career counseling requires empathetic human intuition that algorithms cannot simulate."
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-1.5 animate-in fade-in"><div class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-bold text-[10px] shrink-0"><span class="material-symbols-outlined text-[14px]">science</span></div><div class="flex flex-col gap-1 max-w-[92%]"><div class="flex items-center gap-1.5"><span class="font-label-sm text-[10px] text-on-surface font-bold">AI 문법 진단 코치</span><span class="px-1 rounded bg-tertiary-fixed text-on-tertiary-fixed text-[9px] font-bold">실시간 정밀 진단</span></div><div class="p-space-xs rounded-xl rounded-tl-none bg-surface-container-lowest border-2 border-tertiary text-on-surface shadow-sm space-y-1.5"><div class="flex items-center gap-1 text-tertiary font-bold text-[11px]"><span class="material-symbols-outlined text-[15px]">psychology</span><span class="">관계대명사 계속적 용법 &amp; 주어-동사 수일치 정교화 필요</span></div><p class="text-[10px] text-on-surface-variant leading-tight">민서 학생, 2문단 <span class="font-semibold text-on-surface">'algorithmic feedback, no matter how sophisticated, cannot replicate...'</span> 문장 전후에 관계대명사 절의 주어-동사 수일치 및 수동태 분사구문 표현을 보완하면 글의 격식성(Formality)이 크게 향상됩니다.</p><div class="p-1.5 rounded-lg bg-surface-container-low border border-outline-variant/40 text-[10px] space-y-0.5"><div class="flex items-center justify-between"><span class="text-error font-medium line-through">✖ which are tailored... (수일치 혼동)</span><span class="text-secondary font-bold">✔ which is tailored...</span></div></div><button type="button" onclick="document.getElementById('modal-grammar-minilab').classList.remove('hidden')" class="w-full mt-1 py-1.5 px-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary text-[11px] font-bold flex items-center justify-between transition-all shadow-xs"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">science</span><span class="">🧪 문법 미니랩으로 바로가기</span></span><span class="px-1 py-0.2 rounded bg-surface-container-lowest/20 text-[9px] font-normal">3분 마이크로 챌린지</span></button></div></div></div></div>
+<!-- Quick Prompt Chips -->
+<div class="px-space-xs py-1 bg-surface-container-low/60 border-t border-outline-variant/30 flex items-center gap-1 overflow-x-auto whitespace-nowrap">
+<span class="font-label-sm text-[10px] text-on-surface-variant shrink-0 pl-1">빠른 질문:</span>
+<button class="px-2 py-0.5 rounded-full bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-colors text-[10px] font-medium shrink-0 flex items-center gap-0.5" type="button">
+<span class="">💡</span><span class="">반론 논거 강화법</span>
+</button>
+<button class="px-2 py-0.5 rounded-full bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-colors text-[10px] font-medium shrink-0 flex items-center gap-0.5" type="button">
+<span class="">✍️</span><span class="">B2 학술 어휘 추천</span>
+</button>
+<button class="px-2 py-0.5 rounded-full bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-colors text-[10px] font-medium shrink-0 flex items-center gap-0.5" type="button">
+<span class="">❓</span><span class="">결론-주제문 일치 점검</span>
+</button>
+</div>
+<!-- Chat Input Bar -->
+<div class="p-space-xs bg-surface-container-lowest border-t border-outline-variant/30 flex items-center gap-1">
+<button class="w-7 h-7 rounded-lg text-secondary hover:bg-secondary-fixed/30 flex items-center justify-center transition-colors shrink-0" title="음성으로 말하기 (STT 지원)" type="button">
+<span class="material-symbols-outlined text-[16px]">mic</span>
+</button>
+<input class="flex-1 px-2 py-1 text-xs rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest border border-outline-variant/40 focus:border-primary" placeholder="AI 코치에게 질문하거나 문장 피드백 요청... (Ctrl+Enter)" type="text" id="chat-coach-input">
+<button class="w-7 h-7 rounded-lg bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center shadow-xs transition-colors shrink-0" title="전송 (Send)" type="button" id="btn-send-chat">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PERSISTENT SUBMISSION ACTION BAR (BOTTOM BAR) -->
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-md bg-surface-container-lowest shadow-lg sticky bottom-0 z-40 mt-space-md">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Progress Indicator -->
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-[24px]" id="status-icon">lock_clock</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold" id="status-headline">
+              자가 성찰 완료율: 2/3 완료 (66%)
+            </span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold" id="status-subtag">
+              제출 미달
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate" id="status-desc">
+            체크리스트의 '3번 반론 논박 점검'을 완료하면 제출할 수 있습니다.
+          </span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end"><button class="px-3 py-1.5 rounded-xl bg-primary-fixed/40 text-primary hover:bg-primary-fixed transition-all font-label-lg text-label-lg font-semibold inline-flex items-center gap-1 shadow-xs shrink-0 whitespace-nowrap leading-tight" id="btn-send-email-pdf-bottom" type="button" onclick="document.getElementById('modal-email-pdf-sent').classList.remove('hidden')"><span class="material-symbols-outlined text-[18px] shrink-0">mail</span><span class="whitespace-nowrap">PDF 메일 전송</span></button><button class="px-3 py-1.5 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all font-label-lg text-label-lg font-semibold inline-flex items-center gap-1 shadow-xs shrink-0 whitespace-nowrap leading-tight" id="btn-save-draft" type="button"><span class="material-symbols-outlined text-[18px] shrink-0">save</span><span class="whitespace-nowrap">임시 보관</span></button><button class="px-space-md py-1.5 rounded-xl bg-outline-variant text-on-surface-variant/70 cursor-not-allowed transition-all font-headline-sm text-headline-sm font-bold inline-flex items-center gap-space-xs shadow-md shrink-0 whitespace-nowrap leading-tight" disabled="" id="btn-final-submit" type="button"><span class="material-symbols-outlined text-[20px] shrink-0" id="submit-btn-icon">lock</span><span id="submit-btn-text" class="whitespace-nowrap">🔒 성찰 완료 후 제출 가능 (Submit)</span></button></div>
+</div>
+</div>
+<!-- MODAL: Teacher Formal Task Creation Dialog (Accessible via + 교사 공식 과업 출제) -->
+<div id="modal-task-overview" class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-margin"><div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in duration-200 border border-outline-variant/30"><div class="p-space-lg bg-surface-container-low flex items-center justify-between border-b border-outline-variant/30 sticky top-0 z-10"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[24px]">assignment</span><h3 class="font-headline-md text-headline-md text-on-surface font-bold">📋 과업 활동 개요 &amp; 학습 가이드 (Teacher's Guide)</h3></div><button type="button" onclick="document.getElementById('modal-task-overview').classList.add('hidden')" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="닫기"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="p-space-lg space-y-space-md font-body-md text-body-md"><div class="p-space-md rounded-xl bg-primary-fixed/20 border border-primary/20 space-y-1.5"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">flag</span><span class="font-label-lg text-label-lg text-primary font-bold">1) 활동 목표 및 핵심 질문 (Learning Goal &amp; Essential Question)</span></div><p class="font-body-sm text-body-sm text-on-surface leading-relaxed pl-7">"AI 기술의 혜택과 위험성을 비판적으로 분석하고, 기술에 종속되지 않는 인간 고유의 통제권과 주도적 윤리관을 영문 에세이로 논증하기"</p></div><div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/30 space-y-2"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">checklist_rtl</span><span class="font-label-lg text-label-lg text-on-surface font-bold">2) 필수 포함 요소 및 조건 (Required Elements)</span></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pl-7 text-xs"><div class="flex items-center gap-1.5 text-on-surface"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span><span class="">최소 200단어 이상 본문 작성</span></div><div class="flex items-center gap-1.5 text-on-surface"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span><span class="">구체적 예시 2가지 이상 (교육 / 일상)</span></div><div class="flex items-center gap-1.5 text-on-surface"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span><span class="">B2 학술 어휘 3개 이상 활용</span></div><div class="flex items-center gap-1.5 text-on-surface"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span><span class="">반론 인정 후 재반박 담화 표지 (However, Nonetheless 등)</span></div></div></div><div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/30 space-y-2"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[20px]">timeline</span><span class="font-label-lg text-label-lg text-on-surface font-bold">3) 단계별 작성 플로우 (Step-by-step Process)</span></div><div class="flex flex-wrap items-center gap-1.5 pl-7 text-xs font-medium"><span class="px-2 py-1 rounded-lg bg-surface-container-highest text-on-surface">개요 브레인스토밍</span><span class="material-symbols-outlined text-outline-variant text-[14px]">arrow_forward</span><span class="px-2 py-1 rounded-lg bg-surface-container-highest text-on-surface">초안 작성</span><span class="material-symbols-outlined text-outline-variant text-[14px]">arrow_forward</span><span class="px-2 py-1 rounded-lg bg-surface-container-highest text-on-surface">AI/교사 코멘트 수정</span><span class="material-symbols-outlined text-outline-variant text-[14px]">arrow_forward</span><span class="px-2 py-1 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed">3단계 필수 메타인지 성찰</span><span class="material-symbols-outlined text-outline-variant text-[14px]">arrow_forward</span><span class="px-2 py-1 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-bold">최종 제출</span></div></div><div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/30 space-y-2"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">analytics</span><span class="font-label-lg text-label-lg text-on-surface font-bold">4) 평가 기준 (Rubric Summary)</span></div><span class="font-label-sm text-label-sm text-primary font-semibold">100점 만점 기준</span></div><div class="grid grid-cols-3 gap-space-xs pl-7"><div class="p-space-xs rounded-lg bg-surface-container text-center"><div class="font-label-sm text-label-sm text-on-surface-variant">논리적 전개</div><div class="font-bold text-primary font-headline-sm text-headline-sm">30%</div></div><div class="p-space-xs rounded-lg bg-surface-container text-center"><div class="font-label-sm text-label-sm text-on-surface-variant">어휘 및 문법 다양성</div><div class="font-bold text-primary font-headline-sm text-headline-sm">30%</div></div><div class="p-space-xs rounded-lg bg-secondary-fixed/40 text-center"><div class="font-label-sm text-label-sm text-on-secondary-fixed font-medium">메타인지 성찰 충실도</div><div class="font-bold text-secondary font-headline-sm text-headline-sm">40%</div></div></div></div></div><div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-sm border-t border-outline-variant/30"><button type="button" onclick="document.getElementById('modal-task-overview').classList.add('hidden')" class="px-space-lg py-space-xs rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-sm transition-all flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">check</span><span class="">이해했습니다 (작성 시작하기)</span></button></div></div></div>
+<!-- MODAL: Student Autonomous Practice Task Creation (Accessible via + 나만의 자율 연습 과업 추가) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-margin" id="modal-student-task">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-lg overflow-hidden animate-in fade-in zoom-in duration-200">
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">person_play</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+            나만의 자율 연습 과업 만들기
+          </h3>
+</div>
+<button class="btn-close-modal text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="p-space-lg space-y-space-md font-body-md text-body-md" id="form-student-task">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-bold">연습 일자</label>
+<input class="w-full p-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs focus:outline-none focus:bg-surface-container-high" type="date" value="2025-02-26">
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-bold">자율 연습 주제 (Custom Topic)</label>
+<input class="w-full p-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs focus:outline-none focus:bg-surface-container-high" placeholder="예: My Favorite Movie Character / Why I Love Coding" type="text">
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-bold">나만의 목표 단어 수</label>
+<input class="w-full p-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs focus:outline-none focus:bg-surface-container-high" type="number" value="120">
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-bold">연습 목적</label>
+<select class="w-full p-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs focus:outline-none focus:bg-surface-container-high">
+<option>자유 영작 유창성 기르기</option>
+<option>영어 토론 대비 표현 확장</option>
+<option>어휘 복습 및 문장 만들기</option>
+</select>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-end gap-space-sm">
+<button class="btn-close-modal px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg" type="button">닫기</button>
+<button class="btn-close-modal px-space-lg py-space-xs rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg font-bold shadow-sm hover:opacity-90" type="button">
+            자율 로그 시작하기
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- SUCCESS TOAST / SUBMISSION COMPLETED DIALOG -->
+<div id="modal-grammar-minilab" class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm flex items-center justify-center p-margin hidden"><div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-2xl max-h-[90vh] flex flex-col overflow-hidden animate-in fade-in zoom-in duration-200 border border-outline-variant/30"><div class="p-space-md bg-surface-container-low flex items-center justify-between border-b border-outline-variant/30 shrink-0"><div class="flex items-center gap-space-xs"><span class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]">science</span></span><div><div class="flex items-center gap-1.5"><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">🧪 문법 미니랩 (Grammar Mini-Lab)</h3><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold">AI 맞춤 클리닉</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">관계대명사 수일치 &amp; 복합 분사구문 정복</span></div></div><button type="button" onclick="document.getElementById('modal-grammar-minilab').classList.add('hidden')" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="닫기"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="p-space-lg space-y-space-md overflow-y-auto font-body-md text-body-md"><div class="p-space-sm rounded-xl bg-surface-container-low border border-outline-variant/30 space-y-1.5"><div class="flex items-center justify-between"><div class="flex items-center gap-1 text-primary font-bold font-label-md text-label-md"><span class="material-symbols-outlined text-[16px]">troubleshoot</span><span class="">🔍 내 에세이 속 문법 진단 포인트</span></div><span class="text-[11px] text-on-surface-variant font-medium">에세이 2문단 분석 결과</span></div><div class="grid grid-cols-1 md:grid-cols-2 gap-space-xs text-xs"><div class="p-2 rounded-lg bg-surface-container-lowest border border-error/30"><span class="font-semibold text-error text-[11px] block mb-1">현재 작성 문장 (주의 요망):</span><p class="text-on-surface leading-snug">"AI tutors can provide explanations, <span class="underline font-semibold text-error decoration-2">which was tailored</span> to each learner..."</p></div><div class="p-2 rounded-lg bg-surface-container-lowest border border-secondary/40"><span class="font-semibold text-secondary text-[11px] block mb-1">권장 문법 교정안 (정확성 향상):</span><p class="text-on-surface leading-snug">"AI tutors can provide explanations, <span class="underline font-semibold text-secondary decoration-2">which are tailored</span> to each learner..."</p></div></div><p class="text-[11px] text-on-surface-variant leading-tight pl-1">선행사가 복수명사(explanations)이므로 계속적 용법 관계대명사 절의 동사는 복수 동사 <span class="font-bold text-primary">are</span>가 와야 일치합니다.</p></div><div class="space-y-space-xs"><div class="flex items-center justify-between"><span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[18px]">bolt</span>⚡ 3단계 마이크로 연습 활동 (Step-by-step Mini Practice)</span><span class="text-[11px] text-secondary font-bold">진행도: 2/3 완료</span></div><div class="p-space-sm rounded-xl bg-surface-container-lowest border border-outline-variant/40 space-y-2"><div class="flex items-center justify-between text-xs"><span class="font-bold text-on-surface">[Step 1] 빈칸 채우기 퀵 퀴즈:</span><span class="px-1.5 py-0.2 rounded bg-secondary-fixed/30 text-secondary text-[10px] font-semibold">즉시 채점 완료</span></div><p class="text-xs text-on-surface leading-relaxed">The automated feedback system generates critical analyses, which <span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-bold">[ are / is ]</span> invaluable to young writers.</p><div class="flex items-center gap-2 pt-1"><button type="button" class="px-3 py-1 rounded-lg bg-secondary text-on-secondary text-xs font-bold flex items-center gap-1 shadow-xs"><span class="material-symbols-outlined text-[14px]">check</span><span class="">are (정답 - 선행사 analyses 복수)</span></button><button type="button" class="px-3 py-1 rounded-lg bg-surface-container-low text-on-surface-variant text-xs line-through opacity-60">is (단수 동사 오답)</button></div></div><div class="p-space-sm rounded-xl bg-surface-container-lowest border border-outline-variant/40 space-y-2"><div class="flex items-center justify-between text-xs"><span class="font-bold text-on-surface">[Step 2] 복합 분사구문 변환 훈련:</span><span class="px-1.5 py-0.2 rounded bg-primary-fixed text-primary text-[10px] font-semibold">추천 패턴</span></div><p class="text-xs text-on-surface leading-relaxed"><span class="text-on-surface-variant font-medium">기본형:</span> "Because they excessively depend on automated generators..."<br><span class="text-primary font-medium">고급 분사형:</span> "<span class="font-bold underline">Excessively depending on automated generators</span>, students risk diminishing cognitive faculties."</p></div><div class="p-space-sm rounded-xl bg-secondary-fixed/20 border border-secondary/40 space-y-2"><div class="flex items-center justify-between text-xs"><span class="font-bold text-on-secondary-fixed">[Step 3] 내 에세이에 바로 적용하기 (Live Editor Sync):</span><span class="px-1.5 py-0.2 rounded bg-secondary text-on-secondary text-[10px] font-bold">원클릭 반영</span></div><p class="text-xs text-on-surface leading-snug">학습한 '선행사 수일치 복합절'을 에디터의 2문단에 즉시 적용하여 문법 루브릭 점수를 만점으로 끌어올립니다.</p><div class="flex items-center justify-end"><button type="button" onclick="document.getElementById('modal-grammar-minilab').classList.add('hidden')" class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary text-xs font-bold hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center gap-1 shadow-xs"><span class="material-symbols-outlined text-[14px]">published_with_changes</span><span class="">에디터 본문에 교정 문장 바로 적용하기</span></button></div></div></div></div><div class="p-space-md bg-surface-container-low flex items-center justify-between gap-space-sm border-t border-outline-variant/30 shrink-0"><button type="button" onclick="document.getElementById('modal-grammar-minilab').classList.add('hidden')" class="px-space-md py-1.5 rounded-xl bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1 transition-all"><span class="material-symbols-outlined text-[16px]">bookmark_add</span><span class="">오답 노트 저장</span></button><button type="button" onclick="document.getElementById('modal-grammar-minilab').classList.add('hidden')" class="px-space-lg py-1.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow-sm transition-all flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">check</span><span class="">에세이에 적용하고 글쓰기로 복귀</span></button></div></div></div><div class="fixed top-24 right-6 z-50 hidden max-w-md p-space-md rounded-xl bg-secondary text-on-secondary shadow-xl transition-all" id="toast-submitted">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold">과제가 성공적으로 제출되었습니다!</h4>
+<p class="font-body-sm text-body-sm text-on-secondary/90 mt-1">
+          Mr. Ryan 선생님의 교사 피드백 콘솔로 전송되었으며, 메타인지 성찰 점수가 포트폴리오에 누적되었습니다.
+        </p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // DOM Elements
+    const chkCounterArg = document.getElementById('chk-counter-arg');
+    const checklistCard3 = document.getElementById('checklist-item-3');
+    const reflectionBadge = document.getElementById('reflection-badge');
+    const statusHeadline = document.getElementById('status-headline');
+    const statusSubtag = document.getElementById('status-subtag');
+    const statusDesc = document.getElementById('status-desc');
+    const statusIcon = document.getElementById('status-icon');
+    const btnFinalSubmit = document.getElementById('btn-final-submit');
+    const submitBtnIcon = document.getElementById('submit-btn-icon');
+    const submitBtnText = document.getElementById('submit-btn-text');
+
+    const rubricCounterScore = document.getElementById('rubric-counter-score');
+    const rubricCounterBar = document.getElementById('rubric-counter-bar');
+
+    const takeawayInput = document.getElementById('takeaway-input');
+    const charCounter = document.getElementById('char-counter');
+    const btnSimulateTrivial = document.getElementById('btn-simulate-trivial');
+
+    const aiStatusPill = document.getElementById('ai-status-pill');
+    const aiAlertBox = document.getElementById('ai-alert-box');
+    const aiAlertIcon = document.getElementById('ai-alert-icon');
+    const aiAlertTitle = document.getElementById('ai-alert-title');
+    const aiAlertDesc = document.getElementById('ai-alert-desc');
+    const aiRemedyBox = document.getElementById('ai-remedy-box');
+
+    const btnOpenTeacherModal = document.getElementById('btn-open-teacher-modal');
+    const btnOpenStudentModal = document.getElementById('btn-open-student-modal');
+    const modalTeacher = document.getElementById('modal-teacher-task');
+    const modalStudent = document.getElementById('modal-student-task');
+    const closeButtons = document.querySelectorAll('.btn-close-modal');
+    const toastSubmitted = document.getElementById('toast-submitted');
+    const guideChips = document.querySelectorAll('.guide-chip');
+
+    let isChecklistComplete = false;
+    let isTrivialState = false;
+
+    // Checkbox toggling submission gate
+    chkCounterArg.addEventListener('change', (e) => {
+      isChecklistComplete = e.target.checked;
+      updateSubmissionGate();
+    });
+
+    function updateSubmissionGate() {
+      if (isChecklistComplete && !isTrivialState) {
+        // Unlock Submission
+        reflectionBadge.className = 'inline-flex items-center gap-1 px-space-md py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-semibold';
+        reflectionBadge.innerHTML = '<span class="material-symbols-outlined text-[16px]">lock_open</span> 성찰 완료 (100% 충족)';
+
+        statusHeadline.textContent = '자가 성찰 완료율: 3/3 전체 완료 (100%)';
+        statusSubtag.className = 'px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold';
+        statusSubtag.textContent = '제출 가능';
+        statusDesc.textContent = '모든 자가 성찰이 정밀 검증되었습니다. Ryan 선생님께 최종 제출할 수 있습니다.';
+        statusIcon.textContent = 'verified';
+        statusIcon.className = 'material-symbols-outlined text-secondary text-[24px]';
+
+        rubricCounterScore.textContent = '95% (반론 논박 검증됨)';
+        rubricCounterScore.className = 'font-semibold text-secondary';
+        rubricCounterBar.style.width = '95%';
+        rubricCounterBar.className = 'h-2 rounded-full bg-secondary transition-all';
+
+        btnFinalSubmit.disabled = false;
+        btnFinalSubmit.className = 'px-space-lg py-space-sm rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-all font-headline-sm text-headline-sm font-bold flex items-center gap-space-xs shadow-lg cursor-pointer hover:scale-[1.02] active:scale-[0.98]';
+        submitBtnIcon.textContent = 'send';
+        submitBtnText.textContent = '✅ 선생님께 최종 제출하기';
+      } else {
+        // Lock Submission
+        reflectionBadge.className = 'inline-flex items-center gap-1 px-space-md py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-semibold';
+        reflectionBadge.innerHTML = '<span class="material-symbols-outlined text-[16px]">lock</span> 제출 잠김 (성찰 미달)';
+
+        statusHeadline.textContent = isChecklistComplete ? '자가 성찰 보완 필요: AI 품질 검증 미달' : '자가 성찰 완료율: 2/3 완료 (66%)';
+        statusSubtag.className = 'px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold';
+        statusSubtag.textContent = '제출 미달';
+        statusDesc.textContent = isChecklistComplete ? '성찰 내용이 너무 단순합니다. 구체적 표현을 1문장 이상 보강하세요.' : "체크리스트의 '3번 반론 논박 점검'을 완료하면 제출할 수 있습니다.";
+        statusIcon.textContent = 'lock_clock';
+        statusIcon.className = 'material-symbols-outlined text-error text-[24px]';
+
+        rubricCounterScore.textContent = isChecklistComplete ? '보완 필요' : '확인 대기 중';
+        rubricCounterScore.className = 'font-semibold text-tertiary';
+        rubricCounterBar.style.width = isChecklistComplete ? '45%' : '30%';
+        rubricCounterBar.className = 'h-2 rounded-full bg-tertiary transition-all';
+
+        btnFinalSubmit.disabled = true;
+        btnFinalSubmit.className = 'px-space-lg py-space-sm rounded-xl bg-outline-variant text-on-surface-variant/70 cursor-not-allowed transition-all font-headline-sm text-headline-sm font-bold flex items-center gap-space-xs shadow-md';
+        submitBtnIcon.textContent = 'lock';
+        submitBtnText.textContent = '🔒 성찰 완료 후 제출 가능 (Submit)';
+      }
+    }
+
+    // Interactive Trivial Case Simulation
+    btnSimulateTrivial.addEventListener('click', () => {
+      isTrivialState = !isTrivialState;
+      if (isTrivialState) {
+        takeawayInput.value = '그냥 재밌었다. 열심히 썼다.';
+        charCounter.textContent = '16 / 150자';
+        btnSimulateTrivial.textContent = "'심층 성찰 내용으로 복원하기'";
+
+        // AI Alert reflects the requested warning condition
+        aiStatusPill.className = 'px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold';
+        aiStatusPill.textContent = '보완 권장 (Needs Elaboration)';
+
+        aiAlertBox.className = 'p-space-md rounded-xl bg-tertiary-fixed/30 space-y-space-xs transition-all';
+        aiAlertIcon.textContent = 'warning';
+        aiAlertIcon.className = 'material-symbols-outlined text-tertiary text-[20px]';
+        aiAlertTitle.textContent = '성찰 내용이 다소 단순합니다!';
+        aiAlertTitle.className = 'font-label-lg text-label-lg text-on-tertiary-fixed font-bold';
+        aiAlertDesc.textContent = '글을 쓰면서 새롭게 알게 된 관점이나 다음 글쓰기에서 개선하고 싶은 구체적인 언어 표현(예: 접속사, 반론 구조)을 1문장 이상 보강해 주세요.';
+        aiRemedyBox.classList.remove('hidden');
+      } else {
+        takeawayInput.value = '논증 에세이에서 반론을 먼저 인정하고 재반박할 때 설득력이 훨씬 높아짐을 배웠다.';
+        charCounter.textContent = '64 / 150자';
+        btnSimulateTrivial.textContent = "'단순 작성(\"그냥 재밌었다\")' 시뮬레이션";
+
+        aiStatusPill.className = 'px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold';
+        aiStatusPill.textContent = '유의미한 성찰 달성 (Meaningful)';
+
+        aiAlertBox.className = 'p-space-md rounded-xl bg-secondary-fixed/30 space-y-space-xs transition-all';
+        aiAlertIcon.textContent = 'verified';
+        aiAlertIcon.className = 'material-symbols-outlined text-secondary text-[20px]';
+        aiAlertTitle.textContent = '깊이 있는 메타인지 성찰 감지됨!';
+        aiAlertTitle.className = 'font-label-lg text-label-lg text-on-secondary-fixed font-bold';
+        aiAlertDesc.textContent = '"반론 인정 후 재반박"이라는 글쓰기 담화 전략(Discourse Strategy)을 명확히 명시했습니다. 이러한 구조적 인지는 설득력을 향상시킵니다.';
+        aiRemedyBox.classList.add('hidden');
+      }
+      updateSubmissionGate();
+    });
+
+    // Character counter for takeaway input
+    takeawayInput.addEventListener('input', (e) => {
+      charCounter.textContent = `${e.target.value.length} / 150자`;
+      if (e.target.value.length < 15) {
+        isTrivialState = true;
+      } else {
+        isTrivialState = false;
+      }
+      updateSubmissionGate();
+    });
+
+    // Quick Guided Chips
+    guideChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        takeawayInput.value += ' ' + chip.textContent.trim().replace('#', '');
+        charCounter.textContent = `${takeawayInput.value.length} / 150자`;
+        isTrivialState = false;
+        updateSubmissionGate();
+      });
+    });
+
+    // Final Submit Action
+    btnFinalSubmit.addEventListener('click', () => {
+      if (!btnFinalSubmit.disabled) {
+        toastSubmitted.classList.remove('hidden');
+        btnFinalSubmit.disabled = true;
+        btnFinalSubmit.textContent = '제출 완료됨';
+        setTimeout(() => {
+          toastSubmitted.classList.add('hidden');
+        }, 4000);
+      }
+    });
+
+    // Modal controls
+    btnOpenTeacherModal.addEventListener('click', () => modalTeacher.classList.remove('hidden'));
+    btnOpenStudentModal.addEventListener('click', () => modalStudent.classList.remove('hidden'));
+    closeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modalTeacher.classList.add('hidden');
+        modalStudent.classList.add('hidden');
+      });
+    });
+
+    // Close on backdrop click
+    modalTeacher.addEventListener('click', (e) => { if (e.target === modalTeacher) modalTeacher.classList.add('hidden'); });
+    modalStudent.addEventListener('click', (e) => { if (e.target === modalStudent) modalStudent.classList.add('hidden'); });
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-space-md py-space-sm"><div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-label-lg text-label-lg text-primary font-semibold">Power English Studio</span><span class="font-body-sm text-body-sm text-on-surface-variant">| 서울행복중학교 3학년 영어과 디지털 피드백 시스템</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">verified</span>AI 실시간 코칭 연동됨</span><span class="">© 2025 Mr. Ryan English Lab. All rights reserved.</span></div></div></footer>
+
+<!-- MODAL 1: 학생용 활동자료 PDF 구글 메일 발송 완료 안내 모달 -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-margin" id="modal-email-pdf-sent">
+  <div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-xl max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in duration-200 border border-outline-variant/30">
+    <div class="p-space-lg bg-surface-container-low flex items-center justify-between border-b border-outline-variant/30 sticky top-0 z-10">
+      <div class="flex items-center gap-space-xs">
+        <span class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+        </span>
+        <div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">활동자료 PDF 구글 메일 발송 완료</h3>
+          <span class="font-label-sm text-label-sm text-secondary font-semibold">전과정 포트폴리오 패키징 생성 성공</span>
+        </div>
+      </div>
+      <button type="button" onclick="document.getElementById('modal-email-pdf-sent').classList.add('hidden')" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="닫기">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <div class="p-space-lg space-y-space-md font-body-md text-body-md">
+      <!-- 수신 계정 및 상태 카드 -->
+      <div class="p-space-md rounded-xl bg-secondary-fixed/20 border border-secondary/40 space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="font-label-md text-label-md text-on-secondary-fixed font-bold flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+            수신 학교 공식 구글 계정
+          </span>
+          <span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[11px] font-bold">발송 성공 (Sent)</span>
+        </div>
+        <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
+          <div class="flex items-center gap-2 min-w-0">
+            <span class="material-symbols-outlined text-primary text-[20px]">alternate_email</span>
+            <span class="font-mono font-bold text-on-surface text-[13px] truncate">minseo.lee@seoul-hb.ms.kr</span>
+          </div>
+          <span class="text-[11px] text-on-surface-variant shrink-0">30215 이민서 학생</span>
+        </div>
+        <p class="font-body-sm text-[12px] text-on-secondary-fixed-variant leading-tight">
+          "Learning Log #04: AI in Education 에세이 작성 및 메타인지 자가성찰 전과정이 집약된 영구 보관용 PDF 문서가 학생 및 학부모 확인용 메일함으로 즉시 전송되었습니다."
+        </p>
+      </div>
+      <!-- PDF 포함 내용 구성 리스트 뱃지 -->
+      <div class="space-y-space-xs">
+        <span class="font-label-md text-label-md text-on-surface font-bold block">
+          📦 첨부된 전과정 포트폴리오 PDF 상세 구성 내역:
+        </span>
+        <div class="space-y-1.5">
+          <div class="p-space-xs rounded-lg bg-surface-container-low border border-outline-variant/30 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[10px]">1</span>
+              <span class="font-semibold text-on-surface">초안 ~ 최종 퇴고 수정 이력 타임라인 (Diff Versioning)</span>
+            </div>
+            <span class="px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed text-[10px] font-medium">3개 버전 기록</span>
+          </div>
+          <div class="p-space-xs rounded-lg bg-surface-container-low border border-outline-variant/30 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[10px]">2</span>
+              <span class="font-semibold text-on-surface">AI 코치 소통 대화 전문 (소크라테스식 발문 &amp; 교사 코멘트)</span>
+            </div>
+            <span class="px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed text-[10px] font-medium">코칭 4건 포함</span>
+          </div>
+          <div class="p-space-xs rounded-lg bg-surface-container-low border border-outline-variant/30 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[10px]">3</span>
+              <span class="font-semibold text-on-surface">메타인지 2/3단계 자가성찰지 (Before &amp; After 사고 확장기록)</span>
+            </div>
+            <span class="px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold">92점 수준</span>
+          </div>
+          <div class="p-space-xs rounded-lg bg-surface-container-low border border-outline-variant/30 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[10px]">4</span>
+              <span class="font-semibold text-on-surface">최종 CEFR B2 영작 에세이 본문 (어휘 분석 리포트 포함)</span>
+            </div>
+            <span class="px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold">184단어 수록</span>
+          </div>
+        </div>
+      </div>
+      <!-- 안내 및 클라우드 동기화 -->
+      <div class="p-2.5 rounded-lg bg-surface-container text-xs text-on-surface-variant flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[18px] shrink-0">cloud_sync</span>
+        <span class="">학교 구글 클래스룸 및 개인 구글 드라이브 'Power English 2025' 폴더에도 실시간 동기화되었습니다.</span>
+      </div>
+    </div>
+    <div class="p-space-lg bg-surface-container-low flex items-center justify-between gap-space-sm border-t border-outline-variant/30 sticky bottom-0">
+      <button type="button" onclick="document.getElementById('modal-email-pdf-sent').classList.add('hidden')" class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-highest transition-colors">
+        닫기
+      </button>
+      <button type="button" onclick="window.open('https://mail.google.com', '_blank'); document.getElementById('modal-email-pdf-sent').classList.add('hidden');" class="px-space-lg py-space-xs rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-sm transition-all flex items-center gap-1.5 cursor-pointer">
+        <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+        <span class="">구글 드라이브 및 Gmail에서 즉시 확인</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 2: 교사용 전과정 포트폴리오 아카이브 & 다운로드 콘솔 -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-margin" id="modal-teacher-portfolio-archive">
+  <div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in duration-200 border border-outline-variant/30">
+    <div class="p-space-lg bg-surface-container-low flex items-center justify-between border-b border-outline-variant/30 sticky top-0 z-10">
+      <div class="flex items-center gap-space-xs">
+        <span class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-xs">
+          <span class="material-symbols-outlined text-[20px]">folder_zip</span>
+        </span>
+        <div>
+          <div class="flex items-center gap-2">
+            <h3 class="font-headline-md text-headline-md text-on-surface font-bold">교사용 전과정 포트폴리오 아카이브 &amp; 다운로드</h3>
+            <span class="px-2 py-0.5 rounded-full bg-primary text-on-primary text-[10px] font-bold">Ryan 교사 전용</span>
+          </div>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">학생별·학급별 전과정 데이터 집약 PDF &amp; 통계 CSV 일괄 출력 콘솔</span>
+        </div>
+      </div>
+      <button type="button" onclick="document.getElementById('modal-teacher-portfolio-archive').classList.add('hidden')" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="닫기">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <div class="p-space-lg space-y-space-lg font-body-md text-body-md">
+      <!-- PART 1: 현재 회차 개별 학생 (#04 이민서) 전과정 다운로드 -->
+      <div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-space-sm">
+        <div class="flex items-center justify-between pb-1 border-b border-outline-variant/30">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">person</span>
+            <span class="font-label-lg text-label-lg text-on-surface font-bold">[현재 회차] 30215 이민서 학생 전과정 포트폴리오</span>
+          </div>
+          <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono text-[11px]">Learning Log #04 (2025.02.26)</span>
+        </div>
+        <p class="text-xs text-on-surface-variant">
+          초안부터 교사-AI 상호작용 피드백, 메타인지 성찰 루브릭, 최종 완성본까지 전 과정을 교육행정정보시스템(NEIS) 세특 기재 및 학생 면담 근거 자료로 활용할 수 있도록 패키징합니다.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1">
+          <!-- 버튼 1: PDF 다운로드 -->
+          <div class="p-space-sm rounded-xl bg-surface-container-lowest border border-primary/30 flex flex-col justify-between space-y-2 hover:border-primary transition-all shadow-xs">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+                  전과정 집약 PDF
+                </span>
+                <span class="px-1.5 py-0.2 rounded bg-primary-fixed text-primary text-[10px] font-bold">PDF (A4 4쪽)</span>
+              </div>
+              <p class="text-[11px] text-on-surface-variant leading-tight">
+                초안 + 실시간 수정 이력 + AI/교사 피드백 대화록 + 2·3단계 메타인지 성찰 기록 + 최종 본문 수록
+              </p>
+            </div>
+            <button type="button" onclick="alert('30215 이민서 학생의 [Learning Log #04 전과정 집약 PDF] 다운로드가 시작되었습니다.');" class="w-full py-1.5 px-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary text-xs font-bold flex items-center justify-center gap-1 transition-colors cursor-pointer">
+              <span class="material-symbols-outlined text-[16px]">download</span>
+              <span class="">📥 전과정 집약 PDF 다운로드</span>
+            </button>
+          </div>
+          <!-- 버튼 2: 분석 CSV 다운로드 -->
+          <div class="p-space-sm rounded-xl bg-surface-container-lowest border border-secondary/40 flex flex-col justify-between space-y-2 hover:border-secondary transition-all shadow-xs">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-label-md text-label-md font-bold text-secondary flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px]">table_chart</span>
+                  정량 분석 데이터 CSV
+                </span>
+                <span class="px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold">CSV / Excel</span>
+              </div>
+              <p class="text-[11px] text-on-surface-variant leading-tight">
+                문항별 루브릭 점수(92점), B2 학술 어휘 채택률, 분사구문/관계대명사 오류 수정 횟수, 타임스탬프 기록
+              </p>
+            </div>
+            <button type="button" onclick="alert('30215 이민서 학생의 [문해력·문법 분석 CSV 데이터]가 다운로드되었습니다.');" class="w-full py-1.5 px-space-sm rounded-lg bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary text-xs font-bold flex items-center justify-center gap-1 transition-colors cursor-pointer">
+              <span class="material-symbols-outlined text-[16px]">file_download</span>
+              <span class="">📊 분석 데이터 CSV 다운로드</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- PART 2: 학급 전체 누적 포트폴리오 (서울행복중 3-2반 28명) -->
+      <div class="p-space-md rounded-xl bg-surface-container-high/60 border border-outline-variant/50 space-y-space-sm">
+        <div class="flex items-center justify-between pb-1 border-b border-outline-variant/30">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-tertiary text-[20px]">groups</span>
+            <span class="font-label-lg text-label-lg text-on-surface font-bold">[학급 전체 누적] 서울행복중 3-2반 (28명 전체)</span>
+          </div>
+          <span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold">1~4회차 전 세트 일괄</span>
+        </div>
+        <p class="text-xs text-on-surface-variant">
+          학기말 생활기록부 '영어과 교과세부능력 및 특기사항' 작성 및 학부모 포트폴리오 배부를 위한 학급 단위 일괄 다운로드 기능입니다.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1">
+          <!-- 학급 일괄 ZIP -->
+          <div class="p-space-sm rounded-xl bg-surface-container-lowest border border-outline-variant/40 flex flex-col justify-between space-y-2 hover:border-tertiary transition-all shadow-xs">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-tertiary">archive</span>
+                  학급 전원 통합 PDF (ZIP)
+                </span>
+                <span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface font-mono text-[10px]">28명 분량</span>
+              </div>
+              <p class="text-[11px] text-on-surface-variant leading-tight">
+                번호순(1~28번) 정렬된 학생별 1~4회차 누적 포트폴리오 PDF 개별 파일 및 단일 병합본 포함
+              </p>
+            </div>
+            <button type="button" onclick="alert('서울행복중 3학년 2반 [전교생 1~4회차 누적 포트폴리오 ZIP] 일괄 생성이 시작되었습니다 (약 5초 소요).');" class="w-full py-1.5 px-space-sm rounded-lg bg-surface-container-highest hover:bg-surface-container text-on-surface font-bold text-xs flex items-center justify-center gap-1 transition-colors cursor-pointer border border-outline-variant/40">
+              <span class="material-symbols-outlined text-[16px] text-primary">folder_zip</span>
+              <span class="">📚 전교생 누적 포트폴리오 압축(ZIP) 다운로드</span>
+            </button>
+          </div>
+          <!-- 학급 통계 마스터 CSV -->
+          <div class="p-space-sm rounded-xl bg-surface-container-lowest border border-outline-variant/40 flex flex-col justify-between space-y-2 hover:border-primary transition-all shadow-xs">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-primary">dataset</span>
+                  학급 통계 마스터 시트
+                </span>
+                <span class="px-1.5 py-0.2 rounded bg-primary-fixed/40 text-primary font-mono text-[10px] font-bold">전체 로그</span>
+              </div>
+              <p class="text-[11px] text-on-surface-variant leading-tight">
+                단어수 신장률, 메타인지 성찰 충실도(%), B2 어휘 사용 빈도, AI 질문 회수 등 통계 데이터 종합
+              </p>
+            </div>
+            <button type="button" onclick="alert('서울행복중 3-2반 [영작 및 성찰 통계 마스터 CSV] 다운로드가 완료되었습니다.');" class="w-full py-1.5 px-space-sm rounded-lg bg-surface-container-highest hover:bg-surface-container text-on-surface font-bold text-xs flex items-center justify-center gap-1 transition-colors cursor-pointer border border-outline-variant/40">
+              <span class="material-symbols-outlined text-[16px] text-secondary">download_for_offline</span>
+              <span class="">📑 학급 전체 누적 통계 마스터 CSV</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-space-lg bg-surface-container-low flex items-center justify-between gap-space-sm border-t border-outline-variant/30 sticky bottom-0">
+      <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+        <span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+        학생 개인정보 암호화 보관 지침 준수
+      </span>
+      <button type="button" onclick="document.getElementById('modal-teacher-portfolio-archive').classList.add('hidden')" class="px-space-lg py-space-xs rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-sm transition-all">
+        닫기
+      </button>
+    </div>
+  </div>
+</div>
+
+<script class="">
+  // Click events to show modals
+  const btnEmailPdf = document.getElementById('btn-send-email-pdf');
+  if (btnEmailPdf) {
+    btnEmailPdf.addEventListener('click', () => {
+      document.getElementById('modal-email-pdf-sent').classList.remove('hidden');
+    });
+  }
+  const btnTeacherArchive = document.getElementById('btn-open-teacher-archive');
+  if (btnTeacherArchive) {
+    btnTeacherArchive.addEventListener('click', () => {
+      document.getElementById('modal-teacher-portfolio-archive').classList.remove('hidden');
+    });
+  }
+</script></body></html>
